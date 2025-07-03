@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <strong>Certifications:</strong><br>
         <br>
         <ul class="cert-list">
-            <li><a href="#" target="_blank">• GitHub Foundations Certification – GitHub</a></li>
-            <li><a href="#" target="_blank">• Introduction to Machine Learning – DataCamp</a></li>
-            <li><a href="#" target="_blank">• Intermediate Python – DataCamp</a></li>
-            <li><a href="#" target="_blank">• Image Classification with CNNs – DeepLearning.AI</a></li>
-            <li><a href="#" target="_blank">• Building AI-Powered Apps with Google ML Kit – Google</a></li>
-            <li><a href="#" target="_blank">• Responsive Web Design – freeCodeCamp</a></li>
+            <li><a href="https://www.credly.com/badges/491bdc7b-cc96-4741-b819-517034172660/public_url" target="_blank">• Information Technology Specialist: Software Development - Certiport</a></li>
+            <li><a href="https://www.credly.com/badges/e08dc444-84ef-4358-8d09-6f4ab822f13e" target="_blank">• GitHub Foundations - GitHub</a></li>
+            <li><a href="https://www.freecodecamp.org/certification/j-archives/responsive-web-design" target="_blank">• Responsive Web Design - freeCodeCamp</a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/certificate/7P2WXW1M2B1L" target="_blank">• A Crash Course in Data Science - John Hopkins University</a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/8RVSHKNOR6EU" target="_blank">• Introduction to Generative AI - Google Cloud</a></li>
+            <li><a href="https://www.credly.com/badges/fa891df7-281b-440a-979c-f2fc5f3a1cb3/public_url" target="_blank">• Information Technology Specialist: Databases - Certiport</a></li>
         </ul>
     `;
 
@@ -112,5 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }, options);
 
   document.querySelectorAll('.hidden').forEach(el => revealObserver.observe(el));
+
+  document.addEventListener('click', e => {
+    // look for a button with data‑link
+    const card = e.target.closest('button[data-link]');
+    if (!card) return;             
+
+    // open in new tab 
+    window.open(card.dataset.link, '_blank'); 
+  });
 
 })
