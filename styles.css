@@ -564,15 +564,16 @@ ul.cert-list a:focus {
     gap: 20px;
     flex-direction: column;
     width: fit-content;
-
     position: relative;
     top: -220px;
     left: 50px;
-    
     z-index: 1;
 }
 
 .contact-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80px;
     height: 80px;
     border: 1px solid var(--gray);
