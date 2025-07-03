@@ -19,9 +19,10 @@
                     <li class="underline-hover"><a href="#about">About</a></li>
                     <li class="underline-hover"><a href="#works">Works</a></li>
 
-                    <div id="contact-wrapper">
+                    <li id="contact-wrapper"><a href="#contact">Contact</a></li>
+                    <!-- <div id="contact-wrapper">
                         <li id="contact-text"><a href="#contact">Contact</a></li>
-                    </div>
+                    </div> -->
                 </ul>
                 <div>
 
@@ -30,67 +31,72 @@
         </header>
         <main>
             <section class="hero" id="home">
-                <div class="hero-heading">
+                <div class="hero-heading hidden">
                     <h1 class="hero-title heading">welcome to my</h1>
                     <h1 class="cursive-text">portfolio</h1>
                 </div>
-                <div class="hero-subheading">
+                <div class="hero-subheading hidden">
                     <p class="normal-text">(I'm Judie) <br> (web developer)</p>
                 </div>
             </section>
             <section id="about">
-                <div class="header-container">
+                <div class="header-container hidden">
                     <h2 class="header-title heading about-title">about 
                         <span class="cursive-text">me</span>
                     </h2>
                 </div>
-                <div class="about-content">
+                <div class="about-content hidden">
                     <img 
-                        src="./assets/me.jpg"
+                        src="./assets/red_me.jpg"
                         class="about-image"
                     />
                     <div class="about-text">
-                        <p class="normal-text about-paragraph">
-                            I specialize in HTML, CSS, and JavaScript, with certifications from FreeCodeCamp in Responsive Web Design, Scrimba, and
-                            from Certiport.
-                        </p>
-                        <div class="certifications-container">
-                            <a 
-                            href="https://1drv.ms/f/c/61253542cbe8fae4/EsbsdLVW1JFArd9UrwkBXuwBrWnCntMcbbjIIE1ucrPRDg?e=bjm0Ra" 
-                            target="_blank"
-                            class="cert-text">
-                                (my certifications ->)
-                            </a>
+                        <div class="about-nav-container">
+                            <button class="about-nav" id="about-me-btn">about me</button>
+                            <button class="about-nav" id="about-skills-btn">skills</button>
+                            <button class="about-nav" id="about-cert-btn">certifications</button>
                         </div>
-                        <p class="normal-text about-paragraph">
-                            I'm currently enhancing my skills in <span class="dark-text">Machine Learning</span> and <span class="dark-text">Data Science</span> to tackle both web development and data-driven
-                            projects. My passion is transforming complex ideas into simple, impactful solutions while continuously growing as a
-                            developer.
+                        <p class="normal-text about-paragraph" id="about-text-placeholder">
+                            I'm a Computer Science student with specialization in Machine Learning and a proud DataCamp scholar. I build because I love solving
+                            real problems. From real-time emotion detection to a viral photobooth app used by over 2 million people, I also create
+                            AI-powered tools that make an impact.
+                            <br><br>
+                            I thrive in fast-moving environments where I can grow, ship, and learn alongside strong teams. My work is rooted in
+                            curiosity, experimentation, and a genuine love for learning.
+                        </p>
+                        <p class="normal-text about-paragraph" id="about-me-extra">
+                            Outside of coding, I share my journey to empower other women in tech. I've reached 400K+ likes and built a community of 7K+ aspiring devs, not to chase metrics, but to show what’s possible when you keep building.
                         </p>
                     </div>
                 </div>
             </section>
             <section id="works">
-                <div class="header-container work-title-container">
+                <div class="header-container work-title-container hidden">
                     <h2 class="header-title heading works-title">my 
                         <span class="cursive-text">works</span>
                     </h2>
                 </div>
-                <div class="works-container">
+                <div class="works-container hidden">
                     <div class="work-card">
                         <img 
                             class="work-image"
-                            src="assets/placeholder-1.jpg"
+                            src="assets/vibeify-assets/vibeify-mockup.png"
                             alt="placeholder 1"
                         />
                         <div class="work-text">
-                            <h3 class="project-title">stock market prediction with <br> machine learning</h3>
+                            <h3 class="project-title">Vibeify — Mood Detection & Music Recommendation</h3>
                             <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Vibeify is a mood-based music app built with Android Studio, using Google ML Kit for real-time facial emotion detection.
+                                It recommends a Spotify track via the Spotify API, playing a 15-second preview. If unavailable, a fallback audio from
+                                Firebase Storage is used, delivering personalized music.
                             </p>
-
-                            <div class="icons-container">
-                                <a></a>
+                            <hr>
+                            <p class="arial-text">TECHNOLOGIES USED</p>
+                            <div class="tech-icons-container">
+                                <div class="tech-icons"><img src="assets/vibeify-assets/android-studio-icon.png" alt="" class="tech-image-icons"></div>
+                                <div class="tech-icons"><img src="assets/vibeify-assets/ml-kit-icon.png" alt="" class="tech-image-icons"></div>
+                                <div class="tech-icons"><img src="assets/vibeify-assets/java-icon.png" alt="" class="tech-image-icons"></div>
+                                <div class="tech-icons"><img src="assets/vibeify-assets/firebase-icon.png" alt="" class="tech-image-icons"></div>
                             </div>
                         </div>
                     </div>
@@ -98,62 +104,58 @@
                     <div class="work-card">
                         <img 
                             class="work-image"
-                            src="assets/placeholder-2.jpg"
+                            src="assets/photobooth-assets/home-mockup.png"
                             alt="placeholder 1"
                         />
                         <div class="work-text">
-                            <h3 class="project-title">pomodoro app</h3>
+                            <h3 class="project-title">Photobooth-io — Web App | 2M+ Users</h3>
                             <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Built and launched a responsive photobooth web app with studio-like features, enabling users to take instant,
+                                customizable photo strips online with 100+ frame colors, stickers, and filters. Scaled to 2M+ active users. Deployed via GitHub Pages with SEO optimization, custom domain, and fast-loading performance. Used agile
+                                methodology to iterate quickly based on user feedback, enhancing UX and driving rapid growth.
                             </p>
-
-                            <div class="icons-container">
-                                <a></a>
+                            <hr>
+                            <p class="arial-text">TECHNOLOGIES USED</p>
+                            <div class="tech-icons-container">
+                                <div class="tech-icons"><img src="assets/photobooth-assets/html-icon.png" alt="" class="tech-image-icons large-icons"></div>
+                                <div class="tech-icons"><img src="assets/photobooth-assets/css-icon.png" alt="" class="tech-image-icons large-icons"></div>
+                                <div class="tech-icons"><img src="assets/photobooth-assets/js-icon.png" alt="" class="tech-image-icons large-icons"></div>
+                                <div class="tech-icons"><img src="assets/icons/github-icon.png" alt="" class="tech-image-icons"></div>
                             </div>
                         </div>
                     </div>
                     <div class="work-card">
                         <img 
                             class="work-image"
-                            src="assets/placeholder-3.jpg"
+                            src="assets/vibeify-assets/vibeify-mockup.png"
                             alt="placeholder 1"
                         />
                         <div class="work-text">
-                            <h3 class="project-title">spendee: finance tracker app</h3>
+                            <h3 class="project-title">ToneMatch — Lip Product Undertone Detector</h3>
                             <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Developed a YOLOv11-based computer vision model that classifies lip products into four undertone categories: Warm, Cool,
+                                Neutral to Warm, and Neutral to Cool, to enhance shade-matching accuracy and support personalized beauty recommendations.
+                                Curated and annotated a custom dataset of 200+ images using Label Studio, applying detailed bounding boxes and class
+                                labels to optimize model performance and reliability.
                             </p>
-
-                            <div class="icons-container">
-                                <a></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <img 
-                            class="work-image"
-                            src="assets/placeholder-4.jpg"
-                            alt="placeholder 1"
-                        />
-                        <div class="work-text">
-                            <h3 class="project-title">name of project here</h3>
-                            <p class="project-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            </p>
-
-                            <div class="icons-container">
-                                <a></a>
+                            <hr>
+                            <p class="arial-text">TECHNOLOGIES USED</p>
+                            <div class="tech-icons-container">
+                                <div class="tech-icons"><img src="assets/tone-match-assets/python-icon.png" alt="" class="tech-image-icons large-icons"></div>
+                                <div class="tech-icons"><img src="assets/tone-match-assets/ultralytics-yolo-icon.jpg" alt="" class="tech-image-icons large-icons"></div>
+                                <div class="tech-icons"><img src="assets/tone-match-assets/label-studio-icon.jpg" alt="" class="tech-image-icons large-icons"></div>
+                                <div class="tech-icons"><img src="assets/tone-match-assets/colab-icon.png" alt="" class="tech-image-icons large-icons"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="contact">
-                <div class="contact-heading">
-                    <h1 class="contact-title heading ">want to turn ideas into</h1>
+                <div class="contact-heading hidden">
+                    <h1 class="contact-title heading">want to turn ideas into</h1>
                     <h1 class="cursive-text">reality?</h1>
                 </div>
-                <div class="contact-text-container">
+                <div class="contact-text-container hidden">
                     <p class="contact-text">
                         Let's connect!  
                         <br> 
@@ -163,18 +165,16 @@
                         Email: judiemosinabre.work@gmail.com
                     </p>
                 </div>
-                <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/judie-mosinabre/" target="_blank" class="linkedin-icon">
-                        <i class="fa-brands fa-linkedin-in fa-2xl"></i>
-                    </a>
-                    <a href="https://github.com/judiemosinabre" target="_blank" class="github-icon">
-                        <i class="fa-brands fa-github fa-2xl"></i>
-                    </a>
-                    
-                    
+                <div class="contact-icons hidden">
+                    <button class="contact-icons-container">
+                        <img src="assets/icons/linkedin-icon.png" alt="" class="image-icons">
+                    </button>
+                    <button class="contact-icons-container">
+                        <img src="assets/icons/github-icon.png" alt="" class="image-icons">
+                    </button>
                 </div>
             </section>
         </main>
-        <script src="https://kit.fontawesome.com/889828c10b.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
     </body>
 </html>
