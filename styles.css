@@ -614,17 +614,17 @@ ul.cert-list a:focus {
 
 .image-icons {
     width: 50px;
-    height: fit-content;
+    height: 50px;
 }
 
 .tech-image-icons {
     width: 40px;
-    height: fit-content;
+    height: 40px;
 }
 
 .large-icons {
     width: 30px;
-    height: fit-content;
+    height: 30px;
 }
 
 /* 2a. initial state (off‑screen & invisible) */
@@ -933,7 +933,7 @@ ul.cert-list a:focus {
 
     .image-icons {
         width: 40px;
-        height: fit-content;
+        height: 40px;
     }
 }
 
