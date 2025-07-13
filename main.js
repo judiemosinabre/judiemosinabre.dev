@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const skillsContent = `
         <strong>Languages:</strong><br>
-        • Python, Java, JavaScript, HTML, CSS<br><br>
-
+        • Python, Java, JavaScript, SQL, HTML, CSS<br><br>
+   
         <strong>Frameworks & Tools:</strong><br>
         • YOLOv11, OpenCV, Git, GitHub, Firebase, Android Studio, Visual Studio Code<br><br>
 
