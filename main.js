@@ -153,12 +153,21 @@ document.addEventListener("DOMContentLoaded", () => {
         "<strong>Key Features:</strong><br>• Real-time emotion detection using Google ML Kit<br>• Spotify API integration for music recommendations<br>• Firebase Storage for fallback audio<br>• Android native development<br><br><strong>Impact:</strong> Seamlessly bridges emotion recognition with personalized entertainment.",
     },
     photobooth: {
-      title: "Photobooth-io: Online Photobooth Experience",
-      description:
-        "Built and scaled a responsive photobooth web app to 2M+ total active users with studio-quality features. Users can create customizable photo strips with 100+ frame options, stickers, and filters.",
-      details:
-        "<strong>Key Features:</strong><br>• 100+ customizable frames and sticker options<br>• Real-time photo capture and editing<br>• GitHub Pages deployment with SEO optimization<br>• Agile development and rapid iteration<br><br><strong>Impact:</strong> Scaled rapidly to 2M+ users through UX iteration and viral growth strategies.",
-    },
+    title: "Photobooth-io: Online Photobooth Experience",
+    description:
+      "Built and scaled a viral photobooth web app to 2M+ total active users with studio-quality features. All camera processing runs fully client-side for privacy and low latency, including AI-powered face tracking.",
+    details:
+      "<strong>Key Features:</strong><br>" +
+      "• AI-powered AR face filters using <strong>MediaPipe Face Mesh</strong> (real-time facial landmark detection)<br>" +
+      "• Procedural AR overlays dynamically anchored to facial landmarks (forehead tracking)<br>" +
+      "• 100+ customizable frames and sticker options<br>" +
+      "• Real-time photo capture and editing (no server-side image processing)<br>" +
+      "• GitHub Pages deployment with SEO optimization<br>" +
+      "• Agile development and rapid iteration<br><br>" +
+      "<strong>AI / Computer Vision Work:</strong><br>" +
+      "Implemented on-device face landmark inference and geometric mapping to render animated AR elements with smooth tracking, camera inversion handling, and performance-optimized rendering loops.<br><br>" +
+      "<strong>Impact:</strong> Scaled to 2M+ users through UX-driven iteration, viral sharing mechanics, and privacy-first client-side AI processing.",
+  },
     tonematch: {
       title: "ToneMatch: Lip Product Undertone Detector",
       description:
