@@ -37,13 +37,16 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `
 
-  const aboutMeContent = `
-        I'm a Computer Science student with specialization in Machine Learning and a proud DataCamp scholar. I build because I love solving
-        real problems. From real-time emotion detection to a viral photobooth app used by over 2 million people, I also create
-        AI-powered tools that make an impact.
-        <br><br>
-        I thrive in fast-moving environments where I can grow, ship, and learn alongside strong teams. My work is rooted in
-        curiosity, experimentation, and a genuine love for learning.
+    const aboutMeContent = `
+      I am a Computer Science student specializing in Machine Learning and Computer Vision, with hands-on experience building
+      production-grade AI systems used by real users at scale.
+      <br><br>
+      I design and implement end-to-end AI solutions—from data preparation and model training to on-device inference,
+      performance optimization, and system integration. My work focuses on practical constraints such as latency, privacy,
+      reliability, and user experience, not just model accuracy.
+      <br><br>
+      I am currently seeking AI / ML internship opportunities where I can contribute to applied intelligence projects, learn
+      from experienced engineers, and help deliver scalable, business-relevant solutions.
     `
 
   function swapMain(content, showSkills = false) {
