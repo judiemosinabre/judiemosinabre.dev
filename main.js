@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function toggleExtra(show) {
+    if (!aboutExtra) return;  // add this line
     if (show) {
       aboutExtra.style.maxHeight = aboutExtra.scrollHeight + "px"
       aboutExtra.style.opacity = 1

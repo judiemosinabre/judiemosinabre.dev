@@ -590,7 +590,7 @@ body {
 }
 
 .work-card.filter-hidden {
-  display: none;
+  display: none !important;
 }
 
 .work-card:hover {
