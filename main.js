@@ -37,16 +37,17 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `
 
-    const aboutMeContent = `
-      I am a Computer Science student specializing in Machine Learning and Computer Vision, with hands-on experience building
-      production-grade AI systems used by real users at scale.
+  const aboutMeContent = `
+      I'm an AI and Machine Learning Engineer specializing in Computer Vision and intelligent systems
+      with a track record of building production-grade AI that real users interact with at scale.
       <br><br>
-      I design and implement end-to-end AI solutions—from data preparation and model training to on-device inference,
-      performance optimization, and system integration. My work focuses on practical constraints such as latency, privacy,
-      reliability, and user experience, not just model accuracy.
+      I design and implement end-to-end AI solutions from data preparation and model training to
+      on-device inference, performance optimization, and system integration. My work is grounded in practical constraints:
+      latency, privacy, reliability, and user experience not just model accuracy.
       <br><br>
-      I am currently seeking AI / ML internship opportunities where I can contribute to applied intelligence projects, learn
-      from experienced engineers, and help deliver scalable, business-relevant solutions.
+      I work across the full AI stack: from training models and deploying computer vision pipelines,
+      to orchestrating agents and automating processes with tools like Make, Zapier, and n8n. I don't
+      chase opportunities. I build them.
     `
 
   function swapMain(content, showSkills = false) {
@@ -134,6 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
           card.classList.remove("filter-hidden")
         } else if (filter === "ongoing" && statusText === "ongoing") {
           card.classList.remove("filter-hidden")
+        } else if (filter === "hackathon" && statusText.includes("hackathon")) {
+          card.classList.remove("filter-hidden")
         } else {
           card.classList.add("filter-hidden")
         }
@@ -149,6 +152,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalLink = document.getElementById("modal-link")
 
   const projectData = {
+    sinag: {
+      title: "SINAG: Rooftop Solar Potential Estimator",
+      description:
+        "GeoAI system built for the CodeKada 2026 Hackathon (Green Tech & Sustainability track). Pin any address in Laguna Province and instantly receive a rooftop solar report   usable area, estimated system size, monthly savings, payback period, CO₂ offset, and a 25-year ROI   powered by real satellite imagery and 20 years of solar irradiance data. No manual inspection needed.",
+      details:
+        "<strong>🏆 CodeKada 2026 Hackathon — Green Tech & Sustainability Track</strong><br><br>" +
+        "<strong>Key Features:</strong><br>" +
+        "• Satellite-based rooftop detection and usable area calculation<br>" +
+        "• Slope and orientation analysis from elevation data<br>" +
+        "• 20-year solar irradiance modeling via Google Earth Engine<br>" +
+        "• ROI calculator using live Meralco/FLECO electricity rates<br>" +
+        "• Solar Readiness Score (A+–C) based on payback period<br>" +
+        "• FastAPI backend with real-time Mapbox map integration<br><br>" +
+        "<strong>Role:</strong> Backend + AI Engineering & Documentation (Team: Organic Encoders)<br><br>" +
+        "<strong>Impact:</strong> Addresses the Philippines' high electricity costs (₱12.00+/kWh) by making solar viability instantly assessable for any homeowner in Laguna Province, no site visit required.",
+    },
     vibeify: {
       title: "Vibeify: Mood Detection & Music Recommendation",
       description:
@@ -157,21 +176,21 @@ document.addEventListener("DOMContentLoaded", () => {
         "<strong>Key Features:</strong><br>• Real-time emotion detection using Google ML Kit<br>• Spotify API integration for music recommendations<br>• Firebase Storage for fallback audio<br>• Android native development<br><br><strong>Impact:</strong> Seamlessly bridges emotion recognition with personalized entertainment.",
     },
     photobooth: {
-    title: "Photobooth-io: Online Photobooth Experience",
-    description:
-      "Built and scaled a viral photobooth web app to 2M+ total active users with studio-quality features. All camera processing runs fully client-side for privacy and low latency, including AI-powered face tracking.",
-    details:
-      "<strong>Key Features:</strong><br>" +
-      "• AI-powered AR face filters using <strong>MediaPipe Face Mesh</strong> (real-time facial landmark detection)<br>" +
-      "• Procedural AR overlays dynamically anchored to facial landmarks (forehead tracking)<br>" +
-      "• 100+ customizable frames and sticker options<br>" +
-      "• Real-time photo capture and editing (no server-side image processing)<br>" +
-      "• GitHub Pages deployment with SEO optimization<br>" +
-      "• Agile development and rapid iteration<br><br>" +
-      "<strong>AI / Computer Vision Work:</strong><br>" +
-      "Implemented on-device face landmark inference and geometric mapping to render animated AR elements with smooth tracking, camera inversion handling, and performance-optimized rendering loops.<br><br>" +
-      "<strong>Impact:</strong> Scaled to 2M+ users through UX-driven iteration, viral sharing mechanics, and privacy-first client-side AI processing.",
-  },
+      title: "Photobooth-io: Online Photobooth Experience",
+      description:
+        "Built and scaled a viral photobooth web app to 2M+ total active users with studio-quality features. All camera processing runs fully client-side for privacy and low latency, including AI-powered face tracking.",
+      details:
+        "<strong>Key Features:</strong><br>" +
+        "• AI-powered AR face filters using <strong>MediaPipe Face Mesh</strong> (real-time facial landmark detection)<br>" +
+        "• Procedural AR overlays dynamically anchored to facial landmarks (forehead tracking)<br>" +
+        "• 100+ customizable frames and sticker options<br>" +
+        "• Real-time photo capture and editing (no server-side image processing)<br>" +
+        "• GitHub Pages deployment with SEO optimization<br>" +
+        "• Agile development and rapid iteration<br><br>" +
+        "<strong>AI / Computer Vision Work:</strong><br>" +
+        "Implemented on-device face landmark inference and geometric mapping to render animated AR elements with smooth tracking, camera inversion handling, and performance-optimized rendering loops.<br><br>" +
+        "<strong>Impact:</strong> Scaled to 2M+ users through UX-driven iteration, viral sharing mechanics, and privacy-first client-side AI processing.",
+    },
     tonematch: {
       title: "ToneMatch: Lip Product Undertone Detector",
       description:

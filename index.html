@@ -1,379 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Judie Mosinabre | AI Engineer</title>
-        <link rel="stylesheet" href="./styles.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Monsieur+La+Doulaise&family=Tenor+Sans&display=swap" />
-        
 
-        <meta name="description" content="Judie Mosinabre is an AI Engineer building ML-powered applications that solve real problems with innovation and impact.">
-        <link rel="canonical" href="https://judiemosinabre.dev/">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judie Mosinabre | AI Engineer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Monsieur+La+Doulaise&family=Tenor+Sans&display=swap" />
 
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://judiemosinabre.dev/">
-        <meta property="og:title" content="Judie Mosinabre — AI Engineer">
-        <meta property="og:description" content="Explore Judie Mosinabre's portfolio of AI, ML projects, and innovative applications.">
-        <meta property="og:image" content="https://judiemosinabre.dev/assets/website-preview.png">
 
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:url" content="https://judiemosinabre.dev/">
-        <meta name="twitter:title" content="Judie Mosinabre — AI Engineer">
-        <meta name="twitter:description" content="Explore Judie Mosinabre's portfolio of AI, ML projects, and innovative applications.">
-        <meta name="twitter:image" content="https://judiemosinabre.dev/assets/website-preview.png">
-        
-        <meta name="keywords" content="Judie Mosinabre, AI Engineer, Machine Learning, portfolio, ML projects, computer vision, mood detection, photobooth, photoboothio, ToneMatch, Vibeify, AI applications">
-        <link rel="icon" href="assets/icons/website-logo.png" />
+    <meta name="description"
+        content="Judie Mosinabre is an AI Engineer building ML-powered applications that solve real problems with innovation and impact.">
+    <link rel="canonical" href="https://judiemosinabre.dev/">
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5MY2BDBFK"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-J5MY2BDBFK');
-        </script>
-    </head>
-    <body>
-        <header>
-            <div id="logo">
-                <h1 class="logo-title">judiemosinabre</h1>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://judiemosinabre.dev/">
+    <meta property="og:title" content="Judie Mosinabre — AI Engineer">
+    <meta property="og:description"
+        content="Explore Judie Mosinabre's portfolio of AI, ML projects, and innovative applications.">
+    <meta property="og:image" content="https://judiemosinabre.dev/assets/website-preview.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://judiemosinabre.dev/">
+    <meta name="twitter:title" content="Judie Mosinabre — AI Engineer">
+    <meta name="twitter:description"
+        content="Explore Judie Mosinabre's portfolio of AI, ML projects, and innovative applications.">
+    <meta name="twitter:image" content="https://judiemosinabre.dev/assets/website-preview.png">
+
+    <meta name="keywords"
+        content="Judie Mosinabre, AI Engineer, Machine Learning, portfolio, ML projects, computer vision, mood detection, photobooth, photoboothio, ToneMatch, Vibeify, AI applications">
+    <link rel="icon" href="assets/icons/website-logo.png" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5MY2BDBFK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-J5MY2BDBFK');
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1 class="logo-title">judiemosinabre</h1>
+        </div>
+        <nav id="main-nav">
+            <ul class="nav-links">
+                <li class="underline-hover"><a href="#home">Home</a></li>
+                <li class="underline-hover"><a href="#about">About</a></li>
+                <li class="underline-hover"><a href="#experience">Experience</a></li>
+                <li class="underline-hover"><a href="#works">Works</a></li>
+                <li id="contact-wrapper"><a href="#contact-form-section">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger button (mobile only) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+        </button>
+    </header>
+
+    <!-- Mobile nav drawer -->
+    <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+    <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#works" class="mobile-nav-link">Works</a></li>
+            <li><a href="#contact-form-section" class="mobile-nav-link mobile-contact-link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-heading hidden">
+                <h1 class="hero-title heading">welcome to my</h1>
+                <h1 class="cursive-text">portfolio</h1>
             </div>
-            <nav>
-                <ul class="nav-links">
-                    <li class="underline-hover"><a href="#home">Home</a></li>
-                    <li class="underline-hover"><a href="#about">About</a></li>
-                    <li class="underline-hover"><a href="#works">Works</a></li>
-                    <li id="contact-wrapper"><a href="#contact-form-section">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="hero" id="home">
-                <div class="hero-heading hidden">
-                    <h1 class="hero-title heading">welcome to my</h1>
-                    <h1 class="cursive-text">portfolio</h1>
-                </div>
-                <div class="hero-subheading hidden">
-                    <p id="job-titles" class="normal-text">( AI Engineer )</p>
-                </div>
-            </section>
-            <section id="about">
-                <div class="header-container hidden">
-                    <h2 class="header-title heading about-title">about 
-                        <span class="cursive-text">me</span>
-                    </h2>
-                </div>
-                <div class="about-content hidden">
-                    <img 
-                        src="./assets/my_photo.jpg"
-                        class="about-image"
-                        alt="An Image of Myself"
-                    />
-                    <div class="about-text">
-                        <!-- Enhanced about-nav-container with better styling and spacing -->
-                        <div class="about-nav-container">
-                            <button class="about-nav" id="about-me-btn">about me</button>
-                            <button class="about-nav" id="about-skills-btn">skills</button>
-                            <button class="about-nav" id="about-cert-btn">certifications</button>
+            <div class="hero-subheading hidden">
+                <p id="job-titles" class="normal-text">( AI Engineer )</p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="header-container hidden">
+                <h2 class="header-title heading about-title">about
+                    <span class="cursive-text">me</span>
+                </h2>
+            </div>
+            <div class="about-content hidden">
+                <div class="card-flip-wrapper">
+                    <div class="card-flip-inner">
+                        <div class="card-face card-front">
+                            <img src="./assets/my_photo.jpg" class="about-image" alt="Judie Mosinabre" />
                         </div>
-                        <!-- Added skills-container to display skill logos -->
-                        <div id="skills-container" class="skills-container" style="display: none;">
-                            <div class="skills-grid">
-                                <!-- Programming Languages -->
-                                <button class="skill-button" title="Java">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                                    <span class="skill-label">Java</span>
-                                </button>
-
-                                <button class="skill-button" title="Python">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                                    <span class="skill-label">Python</span>
-                                </button>
-
-                                <button class="skill-button" title="JavaScript">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                                    <span class="skill-label">JavaScript</span>
-                                </button>
-
-                                <button class="skill-button" title="SQL">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
-                                    <span class="skill-label">SQL</span>
-                                </button>
-
-                                <!-- Machine Learning / AI -->
-                                <button class="skill-button" title="TensorFlow">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
-                                    <span class="skill-label">TensorFlow</span>
-                                </button>
-
-                                <button class="skill-button" title="PyTorch">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
-                                    <span class="skill-label">PyTorch</span>
-                                </button>
-
-
-                                <button class="skill-button" title="OpenAI">
-                                    <img class="skill-svg" src="https://www.svgrepo.com/show/306500/openai.svg" alt="OpenAI">
-                                    <span class="skill-label">OpenAI</span>
-                                </button>
-
-                                <button class="skill-button" title="YOLOv11">
-                                    <img class="skill-svg" src="https://cdn.simpleicons.org/yolo/ef3b36" alt="YOLO">
-                                    <span class="skill-label">YOLOv11</span>
-                                </button>
-
-                                <button class="skill-button" title="Google ML Kit">
-                                    <img class="skill-svg" src="https://cdn.simpleicons.org/google/4285F4" alt="Google ML Kit">
-                                    <span class="skill-label">Google ML Kit</span>
-                                </button>
-
-                                <!-- Data Science -->
-                                <button class="skill-button" title="Pandas">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
-                                    <span class="skill-label">Pandas</span>
-                                </button>
-
-                                <button class="skill-button" title="Text Embeddings">
-                                    <img class="skill-svg" src="https://www.svgrepo.com/show/306500/openai.svg" alt="Text Embeddings">
-                                    <span class="skill-label">Text Embeddings</span>
-                                </button>
-
-                                <!-- Computer Vision -->
-                                <button class="skill-button" title="OpenCV">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV">
-                                    <span class="skill-label">OpenCV</span>
-                                </button>
-
-                                <button class="skill-button" title="MediaPipe">
-                                    <img class="skill-svg" src="https://cdn.simpleicons.org/mediapipe/0097A7" alt="MediaPipe">
-                                    <span class="skill-label">MediaPipe</span>
-                                </button>
-
-
-                                <!-- Backend / Cloud -->
-                                <button class="skill-button" title="Firebase">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
-                                    <span class="skill-label">Firebase</span>
-                                </button>
-
-                                <!-- Developer Tools -->
-                                <button class="skill-button" title="Git">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                                    <span class="skill-label">Git</span>
-                                </button>
-
-                                <button class="skill-button" title="Google Colab">
-                                    <img class="skill-svg" src="https://cdn.simpleicons.org/googlecolab/f9ab00" alt="Google Colab">
-                                    <span class="skill-label">Google Colab</span>
-                                </button>
-
-                                <button class="skill-button" title="Label Studio">
-                                    <img class="skill-svg" src="https://cdn.prod.website-files.com/65264f6bf54e751c3a776db1/66d867d15dd7dff0bd9fbe50_label-studio.png" alt="Label Studio">
-                                    <span class="skill-label">Label Studio</span>
-                                </button>
-
-
-                                <button class="skill-button" title="Android Studio">
-                                    <img class="skill-svg" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio">
-                                    <span class="skill-label">Android Studio</span>
-                                </button>
-
-                            </div>
+                        <div class="card-face card-back">
+                            <img src="./assets/hover_photo.jpeg" class="about-image" alt="Judie Mosinabre" />
                         </div>
-                        <p class="normal-text about-paragraph" id="about-text-placeholder">
-                            I am a Computer Science student specializing in Machine Learning and Computer Vision, with hands-on experience building
-                            production-grade AI systems used by real users at scale.
-                            <br><br>
-                            I design and implement end-to-end AI solutions—from data preparation and model training to on-device inference,
-                            performance optimization, and system integration. My work focuses on practical constraints such as latency, privacy,
-                            reliability, and user experience, not just model accuracy.
-                            <br><br>
-                            I am currently seeking AI / ML internship opportunities where I can contribute to applied intelligence projects, learn
-                            from experienced engineers, and help deliver scalable, business-relevant solutions.
-                        </p>
-                        <!-- <p class="normal-text about-paragraph" id="about-me-extra">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <!-- Enhanced about-nav-container with better styling and spacing -->
+                    <div class="about-nav-container">
+                        <button class="about-nav" id="about-me-btn">about me</button>
+                        <button class="about-nav" id="about-skills-btn">skills</button>
+                        <button class="about-nav" id="about-cert-btn">certifications</button>
+                    </div>
+                    <!-- Added skills-container to display skill logos -->
+                    <div id="skills-container" class="skills-container" style="display: none;">
+                        <div class="skills-grid">
+                            <!-- Programming Languages -->
+                            <button class="skill-button" title="Java">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                    alt="Java">
+                                <span class="skill-label">Java</span>
+                            </button>
+
+                            <button class="skill-button" title="Python">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                    alt="Python">
+                                <span class="skill-label">Python</span>
+                            </button>
+
+                            <button class="skill-button" title="JavaScript">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                    alt="JavaScript">
+                                <span class="skill-label">JavaScript</span>
+                            </button>
+
+                            <button class="skill-button" title="SQL">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                                    alt="SQL">
+                                <span class="skill-label">SQL</span>
+                            </button>
+
+                            <!-- Machine Learning / AI -->
+                            <button class="skill-button" title="TensorFlow">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                                    alt="TensorFlow">
+                                <span class="skill-label">TensorFlow</span>
+                            </button>
+
+                            <button class="skill-button" title="PyTorch">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                                    alt="PyTorch">
+                                <span class="skill-label">PyTorch</span>
+                            </button>
+
+
+                            <button class="skill-button" title="OpenAI">
+                                <img class="skill-svg" src="https://www.svgrepo.com/show/306500/openai.svg"
+                                    alt="OpenAI">
+                                <span class="skill-label">OpenAI</span>
+                            </button>
+
+                            <button class="skill-button" title="YOLOv11">
+                                <img class="skill-svg" src="https://cdn.simpleicons.org/yolo/ef3b36" alt="YOLO">
+                                <span class="skill-label">YOLOv11</span>
+                            </button>
+
+                            <button class="skill-button" title="Google ML Kit">
+                                <img class="skill-svg" src="https://cdn.simpleicons.org/google/4285F4"
+                                    alt="Google ML Kit">
+                                <span class="skill-label">Google ML Kit</span>
+                            </button>
+
+                            <!-- Data Science -->
+                            <button class="skill-button" title="Pandas">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                                    alt="Pandas">
+                                <span class="skill-label">Pandas</span>
+                            </button>
+
+                            <button class="skill-button" title="Text Embeddings">
+                                <img class="skill-svg" src="https://www.svgrepo.com/show/306500/openai.svg"
+                                    alt="Text Embeddings">
+                                <span class="skill-label">Text Embeddings</span>
+                            </button>
+
+                            <!-- Computer Vision -->
+                            <button class="skill-button" title="OpenCV">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
+                                    alt="OpenCV">
+                                <span class="skill-label">OpenCV</span>
+                            </button>
+
+                            <button class="skill-button" title="MediaPipe">
+                                <img class="skill-svg" src="https://cdn.simpleicons.org/mediapipe/0097A7"
+                                    alt="MediaPipe">
+                                <span class="skill-label">MediaPipe</span>
+                            </button>
+
+
+                            <!-- Backend / Cloud -->
+                            <button class="skill-button" title="Firebase">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                                    alt="Firebase">
+                                <span class="skill-label">Firebase</span>
+                            </button>
+
+                            <!-- Developer Tools -->
+                            <button class="skill-button" title="Git">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                    alt="Git">
+                                <span class="skill-label">Git</span>
+                            </button>
+
+                            <button class="skill-button" title="Google Colab">
+                                <img class="skill-svg" src="https://cdn.simpleicons.org/googlecolab/f9ab00"
+                                    alt="Google Colab">
+                                <span class="skill-label">Google Colab</span>
+                            </button>
+
+                            <button class="skill-button" title="Label Studio">
+                                <img class="skill-svg"
+                                    src="https://cdn.prod.website-files.com/65264f6bf54e751c3a776db1/66d867d15dd7dff0bd9fbe50_label-studio.png"
+                                    alt="Label Studio">
+                                <span class="skill-label">Label Studio</span>
+                            </button>
+
+
+                            <button class="skill-button" title="Android Studio">
+                                <img class="skill-svg"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+                                    alt="Android Studio">
+                                <span class="skill-label">Android Studio</span>
+                            </button>
+
+                            <!-- AI Automation -->
+                            <button class="skill-button" title="Make">
+                                <img class="skill-svg" src="https://cdn.simpleicons.org/make/6D00CC" alt="Make">
+                                <span class="skill-label">Make</span>
+                            </button>
+
+                            <button class="skill-button" title="Zapier">
+                                <img class="skill-svg" src="https://cdn.simpleicons.org/zapier/FF4A00" alt="Zapier">
+                                <span class="skill-label">Zapier</span>
+                            </button>
+
+                            <button class="skill-button" title="n8n">
+                                <img class="skill-svg" src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n">
+                                <span class="skill-label">n8n</span>
+                            </button>
+
+                        </div>
+                    </div>
+                    <p class="normal-text about-paragraph" id="about-text-placeholder">
+                        I'm an AI and Machine Learning Engineer specializing in Computer Vision and intelligent systems
+                        with a track record of building production-grade AI that real users interact with at scale.
+                        <br><br>
+                        I design and implement end-to-end AI solutions from data preparation and model training to
+                        on-device inference,
+                        performance optimization, and system integration. My work is grounded in practical constraints:
+                        latency, privacy,
+                        reliability, and user experience not just model accuracy.
+                        <br><br>
+                        I work across the full AI stack: from training models and deploying computer vision pipelines,
+                        to orchestrating agents and automating processes with tools like Make, Zapier, and n8n. I don't
+                        chase opportunities. I build them.
+                    </p>
+                    <!-- <p class="normal-text about-paragraph" id="about-me-extra">
                             Outside of coding, I share my journey to empower other women in tech. I've reached 400K+ likes and built a community of 7K+ aspiring devs, not to chase metrics, but to show what's possible when you keep building.
                         </p> -->
-                    </div>
-                </div>
-            </section>
-            <section id="works">
-                <div class="header-container work-title-container hidden">
-                    <h2 class="header-title heading works-title">my 
-                        <span class="cursive-text">works</span>
-                    </h2>
-                </div>
-                
-                <!-- Added filter buttons for project status -->
-                <div class="project-filter-container hidden">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="completed">Completed</button>
-                    <button class="filter-btn" data-filter="ongoing">Ongoing</button>
-                </div>
-                
-                <div class="works-container hidden">
-                    <!-- Added status badges to each project card -->
-                    <button class="work-card" data-project="vibeify" data-link="https://github.com/judiemosinabre/vibeify">
-                        <img 
-                            class="work-image"
-                            src="assets/vibeify-assets/vibeify-mockup.webp"
-                            alt="Vibeify Project Preview"
-                        />
-                        <div class="work-text">
-                            <span class="project-status status-completed">Completed</span>
-                            <h3 class="project-title">Vibeify: Mood Detection & Music Recommedation</h3>
-                            <p class="project-description">
-                                Real-time facial emotion detection with personalized music recommendations using Google ML Kit and Spotify API.
-                            </p>
-                            <hr>
-                            <p class="arial-text">TECHNOLOGIES USED</p>
-                            <div class="tech-icons-container">
-                                <div class="tech-icons" data-label="Java"><img src="assets/vibeify-assets/java-icon.png" alt="Java Icon" class="tech-image-icons"></div>
-                                <div class="tech-icons" data-label="Android Studio"><img src="assets/vibeify-assets/android-studio-icon.png" alt="Android Studio Icon" class="tech-image-icons"></div>
-                                <div class="tech-icons" data-label="Google ML Kit"><img src="assets/vibeify-assets/google-ml-kit-icon.png" alt="Google ML Kit Icon" class="tech-image-icons"></div>
-                                <div class="tech-icons" data-label="Firebase"><img src="assets/vibeify-assets/firebase-icon.png" alt="Firebase Icon" class="tech-image-icons"></div>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button class="work-card" data-project="photobooth" data-link="https://www.photobooth-io.cc">
-                        <img 
-                            class="work-image"
-                            src="assets/photobooth-assets/home-mockup.webp"
-                            alt="Photobooth-io Project Preview"
-                        />
-                        <div class="work-text">
-                            <span class="project-status status-ongoing">Ongoing</span>
-                            <h3 class="project-title">Photobooth-io: Online Photobooth Experience</h3>
-                            <p class="project-description">
-                                Viral photobooth web app scaled to <strong>2M+ total active users</strong>, featuring
-                                <strong>AI-powered AR face filter</strong>, 100+ customizable frames, and studio-quality
-                                camera effects, all running fully client-side.
-                            </p>
-
-                            <hr>
-                            <p class="arial-text">TECHNOLOGIES USED</p>
-                            <div class="tech-icons-container">
-                                <div class="tech-icons" data-label="HTML"><img src="assets/photobooth-assets/html-icon.png" alt="HTML Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="CSS"><img src="assets/photobooth-assets/css-icon.png" alt="CSS Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="JavaScript"><img src="assets/photobooth-assets/js-icon.png" alt="JavaScript Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="GitHub"><img src="assets/icons/github-icon.png" alt="GitHub Icon" class="tech-image-icons"></div>
-                                <div class="tech-icons" data-label="MediaPipe"><img src="assets/icons/mediapipe-logo.png" alt="MediaPipe Icon" class="tech-image-icons large-icons"></div>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button class="work-card" data-project="tonematch" data-link="https://github.com/judiemosinabre/tone-match">
-                        <img 
-                            class="work-image"
-                            src="assets/tone-match-assets/tonematch_preview.webp"
-                            alt="ToneMatch Project Preview"
-                        />
-                        <div class="work-text">
-                            <span class="project-status status-completed">Completed</span>
-                            <h3 class="project-title">ToneMatch: Lip Product Undertone Detector</h3>
-                            <p class="project-description">
-                                YOLOv11-based computer vision model classifying lip products into undertone categories for personalized recommendations.
-                            </p>
-                            <hr>
-                            <p class="arial-text">TECHNOLOGIES USED</p>
-                            <div class="tech-icons-container">
-                                <div class="tech-icons" data-label="Python"><img src="assets/tone-match-assets/python-icon.png" alt="Python Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="Ultralytics"><img src="assets/tone-match-assets/ultralytics-yolo-icon.jpg" alt="Ultralytics Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="Label Studio"><img src="assets/tone-match-assets/label-studio-icon.jpg" alt="Label Studio Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="Google Colab"><img src="assets/tone-match-assets/colab-icon.png" alt="Google Colab Icon" class="tech-image-icons large-icons"></div>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button class="work-card" data-project="sentiment-analysis" data-link="https://github.com/judiemosinabre/Topic_Analysis_of_Clothing_Reviews_with_Embeddings">
-                        <img 
-                            class="work-image"
-                            src="/assets/clothing_reviews.png?height=260&width=340"
-                            alt="Sentiment Analysis Project"
-                        />
-                        <div class="work-text">
-                            <span class="project-status status-completed">Completed</span>
-                            <h3 class="project-title">Topic Analysis of Clothing Reviews with Embeddings</h3>
-                            <p class="project-description">
-                                Applied text embeddings and semantic similarity techniques to analyze e-commerce clothing reviews, uncover dominant feedback themes, and enable personalized review-based insights.
-                            </p>
-                            <hr>
-                            <p class="arial-text">TECHNOLOGIES USED</p>
-                            <div class="tech-icons-container">
-                                <div class="tech-icons" data-label="Python"><img src="assets/tone-match-assets/python-icon.png" alt="Python Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="OpenAI"><img src="assets/icons/openai-logo.png" alt="OpenAI Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="Pandas"><img src="assets/icons/pandas-logo.png" alt="Pandas Icon" class="tech-image-icons large-icons"></div>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button class="work-card" data-project="crop-yield" data-link="https://github.com/judiemosinabre/Paris_Tour_Guide_Mini-Chatbot">
-                        <img 
-                            class="work-image"
-                            src="/assets/paris_mini_chatbot.png?height=260&width=340"
-                            alt="Crop Yield Prediction"
-                        />
-                        <div class="work-text">
-                            <span class="project-status status-completed">Completed</span>
-                            <h3 class="project-title">Paris Tour Guide Mini Chatbot</h3>
-                            <p class="project-description">
-                                Developed an AI-powered travel chatbot for Peterman Reality Tours that acts as a virtual Parisian expert, delivering accurate, culturally informed answers to common tourist questions.
-                            </p>
-                            <hr>
-                            <p class="arial-text">TECHNOLOGIES USED</p>
-                            <div class="tech-icons-container">
-                                <div class="tech-icons" data-label="Python"><img src="assets/tone-match-assets/python-icon.png" alt="Python Icon" class="tech-image-icons large-icons"></div>
-                                <div class="tech-icons" data-label="OpenAI"><img src="assets/icons/openai-logo.png" alt="OpenAI Icon" class="tech-image-icons large-icons"></div>
-                            </div>
-                        </div>
-                    </button>
-
-                    <button class="work-card" data-project="object-detection" data-link="">
-                        <img 
-                            class="work-image"
-                            src="/assets/fsl_multimodal.png?height=260&width=340"
-                            alt="Real-time Object Detection"
-                        />
-                        <div class="work-text">
-                            <span class="project-status status-ongoing">Ongoing</span>
-                            <h3 class="project-title">Filipino Sign Language Gesture & Emotion Detection</h3>
-                            <p class="project-description">
-                                A deep learning project focused on real-time recognition of Filipino Sign Language (FSL) gestures and associated emotions using multimodal visual data.
-                            </p>
-                            <hr>
-                            <p class="arial-text">TECHNOLOGIES USED</p>
-                            <div class="tech-icons-container">
-                                <div class="tech-icons" data-label="Python">
-                                    <img src="assets/tone-match-assets/python-icon.png" alt="Python Icon" class="tech-image-icons large-icons">
-                                </div>
-                                <div class="tech-icons" data-label="MediaPipe">
-                                    <img src="assets/icons/mediapipe-logo.png" alt="MediaPipe Icon" class="tech-image-icons large-icons">
-                                </div>
-                                <div class="tech-icons" data-label="TensorFlow">
-                                    <img src="assets/icons/tensorflow-logo.png" alt="TensorFlow Icon" class="tech-image-icons large-icons">
-                                </div>
-                            </div>
-                        </div>
-                    </button>
-                </div>
-            </section>
-
-            <!-- Added project detail modal for expanded view -->
-            <div id="project-modal" class="project-modal">
-                <div class="modal-content">
-                    <button class="modal-close">&times;</button>
-                    <div class="modal-body">
-                        <h2 id="modal-title" class="modal-title"></h2>
-                        <p id="modal-description" class="modal-description"></p>
-                        <div id="modal-details" class="modal-details"></div>
-                        <a id="modal-link" href="#" class="modal-link-btn" target="_blank">View Project</a>
-                    </div>
                 </div>
             </div>
+        </section>
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="header-container exp-title-container hidden">
+                <h2 class="header-title heading exp-title">my
+                    <span class="cursive-text">experience</span>
+                </h2>
+            </div>
 
-            <!-- <section id="contact">
+            <div class="experience-timeline hidden">
+
+                <!-- Entry 1: FlyRank AI (current) -->
+                <div class="exp-card" id="exp-flyrank">
+                    <div class="exp-left">
+                        <div class="exp-dot current-dot"></div>
+                        <div class="exp-line"></div>
+                    </div>
+                    <div class="exp-right">
+                        <div class="exp-header">
+                            <div class="exp-meta">
+                                <span class="exp-badge badge-current">Current</span>
+                                <h3 class="exp-role">ML Engineering Internship</h3>
+                                <p class="exp-company">FlyRank AI</p>
+                                <p class="exp-details">
+                                    <span class="exp-detail-item">
+                                        <svg class="exp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.8">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                            <line x1="16" y1="2" x2="16" y2="6" />
+                                            <line x1="8" y1="2" x2="8" y2="6" />
+                                            <line x1="3" y1="10" x2="21" y2="10" />
+                                        </svg>
+                                        Jun 2026 – Present &nbsp;·&nbsp; 1 mo
+                                    </span>
+                                    <span class="exp-detail-item">
+                                        <svg class="exp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.8">
+                                            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                        Chicago, Illinois, USA &nbsp;·&nbsp; Remote
+                                    </span>
+                                    <span class="exp-detail-item">
+                                        <svg class="exp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.8">
+                                            <path
+                                                d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                        </svg>
+                                        Internship
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="exp-skills">
+                            <span class="exp-skill-tag">Machine Learning</span>
+                            <span class="exp-skill-tag">ML Engineering</span>
+                            <span class="exp-skill-tag">Python</span>
+                            <span class="exp-skill-tag">AI Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entry 2: SOFI AI -->
+                <div class="exp-card" id="exp-sofi">
+                    <div class="exp-left">
+                        <div class="exp-dot"></div>
+                    </div>
+                    <div class="exp-right">
+                        <div class="exp-header">
+                            <div class="exp-meta">
+                                <span class="exp-badge badge-completed">Completed</span>
+                                <h3 class="exp-role">AI Solutions Intern</h3>
+                                <p class="exp-company">SOFI AI Tech Solution Inc.</p>
+                                <p class="exp-details">
+                                    <span class="exp-detail-item">
+                                        <svg class="exp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.8">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                            <line x1="16" y1="2" x2="16" y2="6" />
+                                            <line x1="8" y1="2" x2="8" y2="6" />
+                                            <line x1="3" y1="10" x2="21" y2="10" />
+                                        </svg>
+                                        Mar 2026 – May 2026 &nbsp;·&nbsp; 3 mos
+                                    </span>
+                                    <span class="exp-detail-item">
+                                        <svg class="exp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.8">
+                                            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                        Quezon City, NCR, Philippines &nbsp;·&nbsp; Hybrid
+                                    </span>
+                                    <span class="exp-detail-item">
+                                        <svg class="exp-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.8">
+                                            <path
+                                                d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                        </svg>
+                                        Internship
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="exp-skills">
+                            <span class="exp-skill-tag">AI Orchestration</span>
+                            <span class="exp-skill-tag">Workflow Automation</span>
+                            <span class="exp-skill-tag">Large Language Models</span>
+                            <span class="exp-skill-tag">Prompt Engineering</span>
+                            <span class="exp-skill-tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="header-container work-title-container hidden">
+                <h2 class="header-title heading works-title">my
+                    <span class="cursive-text">works</span>
+                </h2>
+            </div>
+
+            <!-- Added filter buttons for project status -->
+            <div class="project-filter-container hidden">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+                <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+                <button class="filter-btn" data-filter="hackathon">🏆 Hackathon</button>
+            </div>
+
+            <div class="works-container hidden">
+                <!-- Added status badges to each project card -->
+
+                <!-- SINAG — CodeKada Hackathon -->
+                <button class="work-card" data-project="sinag"
+                    data-link="https://github.com/judiemosinabre/CodeKada-SINAG-Spatial-Integration-of-Neural-Analytics-for-Energy-Generation-">
+                    <img class="work-image" src="assets/sinag-assets/sinag.png" alt="SINAG Project Preview" />
+                    <div class="work-text">
+                        <span class="project-status status-hackathon">🏆 CodeKada Hackathon 2026</span>
+                        <h3 class="project-title">SINAG: Rooftop Solar Potential Estimator</h3>
+                        <p class="project-description">
+                            GeoAI system that pins any address in Laguna Province and instantly estimates rooftop usable
+                            area, solar system size, monthly savings, payback period, and 25-year ROI powered by
+                            real satellite imagery and 20 years of solar irradiance data.
+                        </p>
+                        <hr>
+                        <p class="arial-text">TECHNOLOGIES USED</p>
+                        <div class="tech-icons-container">
+                            <div class="tech-icons" data-label="Python"><img
+                                    src="assets/tone-match-assets/python-icon.png" alt="Python Icon"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="Google Earth Engine"><img
+                                    src="https://cdn.simpleicons.org/google/4285F4" alt="Google Earth Engine"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="FastAPI"><img
+                                    src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="Mapbox"><img
+                                    src="https://cdn.simpleicons.org/mapbox/000000" alt="Mapbox"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="GitHub"><img src="assets/icons/github-icon.png"
+                                    alt="GitHub Icon" class="tech-image-icons"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="work-card" data-project="vibeify" data-link="https://github.com/judiemosinabre/vibeify">
+                    <img class="work-image" src="assets/vibeify-assets/vibeify-mockup.webp"
+                        alt="Vibeify Project Preview" />
+                    <div class="work-text">
+                        <span class="project-status status-completed">Completed</span>
+                        <h3 class="project-title">Vibeify: Mood Detection & Music Recommedation</h3>
+                        <p class="project-description">
+                            Real-time facial emotion detection with personalized music recommendations using Google ML
+                            Kit and Spotify API.
+                        </p>
+                        <hr>
+                        <p class="arial-text">TECHNOLOGIES USED</p>
+                        <div class="tech-icons-container">
+                            <div class="tech-icons" data-label="Java"><img src="assets/vibeify-assets/java-icon.png"
+                                    alt="Java Icon" class="tech-image-icons"></div>
+                            <div class="tech-icons" data-label="Android Studio"><img
+                                    src="assets/vibeify-assets/android-studio-icon.png" alt="Android Studio Icon"
+                                    class="tech-image-icons"></div>
+                            <div class="tech-icons" data-label="Google ML Kit"><img
+                                    src="assets/vibeify-assets/google-ml-kit-icon.png" alt="Google ML Kit Icon"
+                                    class="tech-image-icons"></div>
+                            <div class="tech-icons" data-label="Firebase"><img
+                                    src="assets/vibeify-assets/firebase-icon.png" alt="Firebase Icon"
+                                    class="tech-image-icons"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="work-card" data-project="photobooth" data-link="https://www.photobooth-io.cc">
+                    <img class="work-image" src="assets/photobooth-assets/home-mockup.webp"
+                        alt="Photobooth-io Project Preview" />
+                    <div class="work-text">
+                        <span class="project-status status-ongoing">Ongoing</span>
+                        <h3 class="project-title">Photobooth-io: Online Photobooth Experience</h3>
+                        <p class="project-description">
+                            Viral photobooth web app scaled to <strong>2M+ total active users</strong>, featuring
+                            <strong>AI-powered AR face filter</strong>, 100+ customizable frames, and studio-quality
+                            camera effects, all running fully client-side.
+                        </p>
+
+                        <hr>
+                        <p class="arial-text">TECHNOLOGIES USED</p>
+                        <div class="tech-icons-container">
+                            <div class="tech-icons" data-label="HTML"><img src="assets/photobooth-assets/html-icon.png"
+                                    alt="HTML Icon" class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="CSS"><img src="assets/photobooth-assets/css-icon.png"
+                                    alt="CSS Icon" class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="JavaScript"><img
+                                    src="assets/photobooth-assets/js-icon.png" alt="JavaScript Icon"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="GitHub"><img src="assets/icons/github-icon.png"
+                                    alt="GitHub Icon" class="tech-image-icons"></div>
+                            <div class="tech-icons" data-label="MediaPipe"><img src="assets/icons/mediapipe-logo.png"
+                                    alt="MediaPipe Icon" class="tech-image-icons large-icons"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="work-card" data-project="tonematch"
+                    data-link="https://github.com/judiemosinabre/tone-match">
+                    <img class="work-image" src="assets/tone-match-assets/tonematch_preview.webp"
+                        alt="ToneMatch Project Preview" />
+                    <div class="work-text">
+                        <span class="project-status status-completed">Completed</span>
+                        <h3 class="project-title">ToneMatch: Lip Product Undertone Detector</h3>
+                        <p class="project-description">
+                            YOLOv11-based computer vision model classifying lip products into undertone categories for
+                            personalized recommendations.
+                        </p>
+                        <hr>
+                        <p class="arial-text">TECHNOLOGIES USED</p>
+                        <div class="tech-icons-container">
+                            <div class="tech-icons" data-label="Python"><img
+                                    src="assets/tone-match-assets/python-icon.png" alt="Python Icon"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="Ultralytics"><img
+                                    src="assets/tone-match-assets/ultralytics-yolo-icon.jpg" alt="Ultralytics Icon"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="Label Studio"><img
+                                    src="assets/tone-match-assets/label-studio-icon.jpg" alt="Label Studio Icon"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="Google Colab"><img
+                                    src="assets/tone-match-assets/colab-icon.png" alt="Google Colab Icon"
+                                    class="tech-image-icons large-icons"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="work-card" data-project="sentiment-analysis"
+                    data-link="https://github.com/judiemosinabre/Topic_Analysis_of_Clothing_Reviews_with_Embeddings">
+                    <img class="work-image" src="/assets/clothing_reviews.png?height=260&width=340"
+                        alt="Sentiment Analysis Project" />
+                    <div class="work-text">
+                        <span class="project-status status-completed">Completed</span>
+                        <h3 class="project-title">Topic Analysis of Clothing Reviews with Embeddings</h3>
+                        <p class="project-description">
+                            Applied text embeddings and semantic similarity techniques to analyze e-commerce clothing
+                            reviews, uncover dominant feedback themes, and enable personalized review-based insights.
+                        </p>
+                        <hr>
+                        <p class="arial-text">TECHNOLOGIES USED</p>
+                        <div class="tech-icons-container">
+                            <div class="tech-icons" data-label="Python"><img
+                                    src="assets/tone-match-assets/python-icon.png" alt="Python Icon"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="OpenAI"><img src="assets/icons/openai-logo.png"
+                                    alt="OpenAI Icon" class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="Pandas"><img src="assets/icons/pandas-logo.png"
+                                    alt="Pandas Icon" class="tech-image-icons large-icons"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="work-card" data-project="crop-yield"
+                    data-link="https://github.com/judiemosinabre/Paris_Tour_Guide_Mini-Chatbot">
+                    <img class="work-image" src="/assets/paris_mini_chatbot.png?height=260&width=340"
+                        alt="Crop Yield Prediction" />
+                    <div class="work-text">
+                        <span class="project-status status-completed">Completed</span>
+                        <h3 class="project-title">Paris Tour Guide Mini Chatbot</h3>
+                        <p class="project-description">
+                            Developed an AI-powered travel chatbot for Peterman Reality Tours that acts as a virtual
+                            Parisian expert, delivering accurate, culturally informed answers to common tourist
+                            questions.
+                        </p>
+                        <hr>
+                        <p class="arial-text">TECHNOLOGIES USED</p>
+                        <div class="tech-icons-container">
+                            <div class="tech-icons" data-label="Python"><img
+                                    src="assets/tone-match-assets/python-icon.png" alt="Python Icon"
+                                    class="tech-image-icons large-icons"></div>
+                            <div class="tech-icons" data-label="OpenAI"><img src="assets/icons/openai-logo.png"
+                                    alt="OpenAI Icon" class="tech-image-icons large-icons"></div>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="work-card" data-project="object-detection" data-link="">
+                    <img class="work-image" src="/assets/fsl_multimodal.png?height=260&width=340"
+                        alt="Real-time Object Detection" />
+                    <div class="work-text">
+                        <span class="project-status status-ongoing">Ongoing</span>
+                        <h3 class="project-title">Filipino Sign Language Gesture & Emotion Detection</h3>
+                        <p class="project-description">
+                            A deep learning project focused on real-time recognition of Filipino Sign Language (FSL)
+                            gestures and associated emotions using multimodal visual data.
+                        </p>
+                        <hr>
+                        <p class="arial-text">TECHNOLOGIES USED</p>
+                        <div class="tech-icons-container">
+                            <div class="tech-icons" data-label="Python">
+                                <img src="assets/tone-match-assets/python-icon.png" alt="Python Icon"
+                                    class="tech-image-icons large-icons">
+                            </div>
+                            <div class="tech-icons" data-label="MediaPipe">
+                                <img src="assets/icons/mediapipe-logo.png" alt="MediaPipe Icon"
+                                    class="tech-image-icons large-icons">
+                            </div>
+                            <div class="tech-icons" data-label="TensorFlow">
+                                <img src="assets/icons/tensorflow-logo.png" alt="TensorFlow Icon"
+                                    class="tech-image-icons large-icons">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- Added project detail modal for expanded view -->
+        <div id="project-modal" class="project-modal">
+            <div class="modal-content">
+                <button class="modal-close">&times;</button>
+                <div class="modal-body">
+                    <h2 id="modal-title" class="modal-title"></h2>
+                    <p id="modal-description" class="modal-description"></p>
+                    <div id="modal-details" class="modal-details"></div>
+                    <a id="modal-link" href="#" class="modal-link-btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <section id="contact">
                 <div class="contact-heading hidden">
                     <h1 class="contact-title heading">want to turn ideas into</h1>
                     <h1 class="cursive-text">reality?</h1>
@@ -388,86 +641,122 @@
                 </div> 
                 
             </section> -->
-            <section id="contact-form-section">
-                <div class="form-container hidden">
-                    <h2 class="form-title heading">send a <span class="cursive-text-form"> message</span></h2>
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <input 
-                                type="text" 
-                                id="form-name" 
-                                class="form-input" 
-                                placeholder="Your Name"
-                                required
-                            />
-                            <span class="form-error" id="name-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <input 
-                                type="email" 
-                                id="form-email" 
-                                class="form-input" 
-                                placeholder="Your Email"
-                                required
-                            />
-                            <span class="form-error" id="email-error"></span>
-                        </div>
-                        <div class="form-group">
-                            <textarea 
-                                id="form-message" 
-                                class="form-input form-textarea" 
-                                placeholder="Your Message"
-                                rows="6"
-                                required
-                            ></textarea>
-                            <span class="form-error" id="message-error"></span>
-                        </div>
-                        <button type="submit" class="form-submit-btn">Send Message</button>
-                        <div id="form-feedback" class="form-feedback"></div>
-                    </form>
-                </div>
-                <div class="contact-icons hidden">
-                    <a class="contact-icons-container" href="https://www.linkedin.com/in/judie-mosinabre/" target="_blank">
-                        <img src="assets/icons/linkedin-icon.png" alt="LinkedIn icon" class="image-icons">
-                    </a>
-                    <a class="contact-icons-container" href="https://github.com/judiemosinabre" target="_blank">
-                        <img src="assets/icons/github-icon.png" alt="GitHub icon" class="image-icons">
-                    </a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>© <span id="year"></span> Judie Mosinabre. All rights reserved.</p>
-        </footer>
-        <script src="main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-        <script src="mail.js"></script>
-        <script>
-            document.getElementById("year").textContent = new Date().getFullYear();
+        <section id="contact-form-section">
+            <div class="form-container hidden">
+                <h2 class="form-title heading">send a <span class="cursive-text-form"> message</span></h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="form-name" class="form-input" placeholder="Your Name" required />
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="form-email" class="form-input" placeholder="Your Email" required />
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="form-message" class="form-input form-textarea" placeholder="Your Message" rows="6"
+                            required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Send Message</button>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </form>
+            </div>
+            <div class="contact-icons hidden">
+                <a class="contact-icons-container" href="https://www.linkedin.com/in/judie-mosinabre/" target="_blank">
+                    <img src="assets/icons/linkedin-icon.png" alt="LinkedIn icon" class="image-icons">
+                </a>
+                <a class="contact-icons-container" href="https://github.com/judiemosinabre" target="_blank">
+                    <img src="assets/icons/github-icon.png" alt="GitHub icon" class="image-icons">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="year"></span> Judie Mosinabre. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="mail.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
 
-            const titles = document.getElementById('job-titles');
-            let index = 0;
+        const titles = document.getElementById('job-titles');
+        let index = 0;
 
-            const positions = [
-                '( AI Engineer )',
-                '( Web Developer )',
-                '( UI/UX Designer )',
-                '( Software Engineer )',
-                '( ML Engineer )'
-            ];
+        const positions = [
+            '( AI Engineer )',
+            '( ML Engineer )',
+            '( Web Developer )',
+            '( UI/UX Designer )',
+            '( Software Engineer )'
 
-            function showNextMessage() {
-                titles.classList.remove('fade');
-                void titles.offsetWidth; // force reflow
-                titles.textContent = positions[index];
-                titles.classList.add('fade');
+        ];
 
-                index = (index + 1) % positions.length;
-            }
+        function showNextMessage() {
+            titles.classList.remove('fade');
+            void titles.offsetWidth; // force reflow
+            titles.textContent = positions[index];
+            titles.classList.add('fade');
 
-            showNextMessage();
-            setInterval(showNextMessage, 2000); // MATCH animation duration
-        </script>
+            index = (index + 1) % positions.length;
+        }
 
-    </body>
+        showNextMessage();
+        setInterval(showNextMessage, 2000); // MATCH animation duration
+    </script>
+
+    <script>
+        // Scroll-triggered card flip
+        const cardWrapper = document.querySelector('.card-flip-wrapper');
+        if (cardWrapper) {
+            const flipObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        cardWrapper.classList.add('peek');
+                        setTimeout(() => cardWrapper.classList.remove('peek'), 1400);
+                    }
+                });
+            }, { threshold: 0.5 });
+            flipObserver.observe(cardWrapper);
+        }
+    </script>
+
+    <script>
+        // Hamburger menu
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileNav = document.getElementById('mobile-nav');
+        const overlay = document.getElementById('mobile-overlay');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function openMenu() {
+            hamburgerBtn.classList.add('open');
+            mobileNav.classList.add('open');
+            overlay.classList.add('open');
+            hamburgerBtn.setAttribute('aria-expanded', 'true');
+            mobileNav.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            hamburgerBtn.classList.remove('open');
+            mobileNav.classList.remove('open');
+            overlay.classList.remove('open');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            mobileNav.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.contains('open') ? closeMenu() : openMenu();
+        });
+
+        overlay.addEventListener('click', closeMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    </script>
+</body>
+
 </html>
